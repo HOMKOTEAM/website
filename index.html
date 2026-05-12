@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homkoteam Prod</title>
+    
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Градиентный фон */
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Белая карточка по центру */
+        .card {
+            background: white;
+            border-radius: 30px;
+            padding: 50px 30px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Круг для фото или аватарки */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            /* Замените #0284c7 на url("твоё-фото.jpg") когда будет фото */
+            background: #0284c7;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        /* Если вставите картинку */
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Кнопка-ссылка */
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <!-- Аватар (смайлик вместо фото, позже замените на своё фото или логотип) -->
+        <div class="avatar">👨‍💻</div>
+        
+        <!-- Ваше имя или ник -->
+        <h1>Homkoteam</h1>
+        
+        <!-- Описание -->
+        <p class="description">
+            Начинающий разработчик. Учусь создавать сайты с нуля. 
+            Это мой первый проект.
+        </p>
+        
+        <!-- Кнопка связи -->
+        <!-- Кнопки -->
+<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+    <a href="https://t.me/homkoteam" class="btn" target="_blank">📱 Telegram</a>
+    <a href="mailto:homkoteam@gmail.com" class="btn">📧 Gmail</a>
+</div>
+        
+        <!-- Статус -->
+        <p class="status">🟢 Открыт к новым знаниям</p>
+        
+    </div>
+
+</body>
+</html>
